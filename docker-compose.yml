@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  localstack:
+    image: localstack/localstack:latest
+    environment:
+      - SERVICES=s3,dynamodb,lambda,apigateway,cloudwatch,iam,sts
+      - DEBUG=1
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - AWS_DEFAULT_REGION=us-east-1
+      - EDGE_PORT=4566
+    ports:
+      - "4566:4566"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./setup:/docker-entrypoint-initaws.d"
