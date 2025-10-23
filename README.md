@@ -194,3 +194,8 @@ upload: ./test-file.txt to s3://ingestor-raw/test-file.txt
 ```
 
 > **Nota:** O upload para o S3 foi realizado com sucesso, mas não há itens no DynamoDB nem arquivos processados. Isso indica que a trigger do Lambda ou o processamento do arquivo ainda precisa ser ajustado para completar o fluxo end-to-end.
+
+
+## Imagens
+<img width="399" height="135" alt="image" src="https://github.com/user-attachments/assets/bee2313b-636e-4a4e-9678-18371b2c0f2e" />
+<img width="902" height="334" alt="image" src="https://github.com/user-attachments/assets/02c27fc2-28a5-4f0b-a00c-7eccc3803b79" />
